@@ -1,0 +1,206 @@
+<style type="text/css">
+			body{
+				margin:0;
+				padding:0;
+				font-family:Arial,freesans,sans-serif;
+				}
+			#topbar{
+				width:1100px;
+				height:40px;
+				margin:0 auto;
+				}
+			#bbclogo{
+				margin-top:8px;
+				margin-right:10px;
+				float:left;
+				}
+			#signinlogo{
+				margin:12px 8px 8px 10px;
+				float:left;
+				}
+			.topbar-div{
+				float:left;
+				border-left:1px #CCCCCC solid;
+				height:100%;
+				}
+			#signin-text{
+				font-weight:bold;
+				font-size:90%;
+				position:relative;
+				top:14px;				
+				}
+			.topmenu{
+				padding:13px 10px 0px 10px;
+				font-weight:bold;
+				font-size:90%;
+				height:27px;
+				}
+			#arrow-style{
+				width:15px;
+				padding-left:30px;
+				}								
+			#search-box{
+				background-color:#E4E4E4;
+				font-weight:bold;
+				padding:5px;width:140px;
+				margin:9px 0px 6px 20px;
+				border:none;
+				
+				}
+			.clear{
+				clear:both;
+				}
+			#Menu-bar{
+				border-top:2px solid #cccccc;
+				background-color:#BB1919;
+				width:100%;height:70px;
+				}
+			#menu-center{
+				width:1100px;
+				margin:0 auto;
+				}
+			h1{
+				margin:0;
+				color:white;
+				font-size:40px;
+				font-weight:normal;
+				padding-top:9px;
+				float:left;
+				}
+			#local-news{
+				float:right;
+				border:1px #f988b9 solid;
+				width:200px;
+				padding:0px 2px 0px 4px;
+				margin:3px 10px 0px 0px;
+				
+				
+				}
+			#local-news a{
+				color:white;
+				text-decoration:none;
+				font-size:20px;
+				position:relative;
+				top:-15px;
+				
+				
+				}
+			#local-news a:hover{
+				
+				text-decoration:underline;
+				}
+			#local-news img{
+				height:50px;
+				}
+			#Menu-bar2{
+				background-color:#BB1919;
+				width:100%;height:35px;
+				}
+			#Menu-center2{
+				width:1100px;
+				margin:0 auto;
+				}
+			#Menu-center2 a{
+				color:white;
+				text-decoration:none;
+				padding:0px 10px;
+				border-right:1px solid #BB454F;
+				position:relative;
+				top:-3px;
+				font-size:11px;
+				
+				}
+			.no-border{
+				border:none !important;
+				}	
+			.no-frontpadding{
+				padding:0px 10px 0px 0px !important;
+				}
+			#down-arrow{
+				position:relative;
+				top:5px;
+				
+				}
+			#Article-container{
+				width:1100px;
+				margin:0 auto;
+				overflow-y:auto;
+				height:300px;
+				}
+			#Main-piece{
+				width:250px;
+				float:left;
+				
+				}
+			h1 a{
+				font-weight:bold;
+				font-size:27px;
+				text-decoration:none;
+				color:black;
+				}
+			h1 a:hover{
+				text-decoration:underline;
+				color:#139FD2;
+				}
+			#Mainpiece-summary{
+				color:#5a5a5a;
+				float:left;
+				}
+			#Mainpiece-summary a{
+				text-decoration:none;
+				color:#5a5a5a;
+				padding-left:3px;
+				}
+			#Mainpiece-summary a:hover{
+				text-decoration:underline;
+				color:#139FD2;
+				}
+			#Mainpiece-summary img{
+				position:relative;
+				top:3px;
+				}
+			#ASDA{
+				width:450px;
+				float:left;
+				margin-left:10px;
+				}
+			#Article2{
+				width:218px;
+				float:left;
+				}
+			h3 a{
+				font-size:90%;color:black;
+				text-decoration:none;
+				}
+			h3 a:hover{
+				text-decoration:underline;
+				color:#139FD2;
+				}
+			#Article2-summary{
+				color:#5a5a5a;
+				font-size:90%;
+				}
+			#color{
+				color:#5a5a5a;
+				}
+			#color a{
+				color:#5a5a5a;
+				text-decoration:none;
+				}
+			#color a:hover{
+				text-decoration:underline;
+				color:#139FD2;
+				}
+			#color img{
+				position:relative;
+				top:3px;
+				}
+			#Article1{
+				margin:15px;
+				}
+			#Article2{
+				margin:15px;
+				margin-top:0 !important;
+				}
+			
+		</style>

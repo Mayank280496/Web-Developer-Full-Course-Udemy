@@ -1,0 +1,39 @@
+<html>
+<head>
+	<title>Javascript</title>
+	
+</head>
+
+<body>
+	<p id="text1">I am Starting to learn javascript</p>
+	<Button id="Button1">Change Text!</button>	
+	<p id="text2">Just Starting Jav...</p>
+	<Button id="Button2">Append Text</button>	
+	<p id="text3"></p>
+	<Button id="Button3">Create Text</button>
+	<p id="text4">Something Anything</p>
+	<Button id="Button4">Design Text</button>
+	<script type="text/javascript">
+		document.getElementById("Button1").onclick=function(){
+			alert('Button Clicked');
+			document.getElementById("text1").innerHTML="This is difficult";		
+			}
+		document.getElementById("Button2").onclick=function(){
+			
+			document.getElementById("text2").innerHTML="I was "+document.getElementById("text2").innerHTML+"ascript";			
+			}
+		document.getElementById("Button3").onclick=function(){
+			
+			document.getElementById("text3").innerHTML="Heyya. Magic";		
+			}
+		document.getElementById("Button4").onclick=function(){
+			document.getElementById("text4").style.color="Red";
+			document.getElementById("text4").style.fontSize="40px";
+			document.getElementById("text4").style.fontWeight="Bold";
+			}
+	</script>
+
+
+	
+</body>
+</html>

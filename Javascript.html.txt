@@ -1,0 +1,9 @@
+<html>
+<head>
+	<title>Javascript</title>
+</head>
+
+<body>
+	<button onclick="alert('Dont')">Click Me!</button>
+</body>
+</html>

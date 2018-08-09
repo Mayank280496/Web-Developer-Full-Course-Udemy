@@ -1,0 +1,37 @@
+<html>
+<head>
+	<title>Javascript</title>
+</head>
+
+<body>
+	
+	<p>Guess the number of finger I am holding up <3</p>
+<input id="input">
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+
+
+function myFunction() {
+	var x = Math.floor((Math.random() * 5) + 1);
+    	var j=document.getElementById("input").value;
+	for(var i=0;i<3;i++){
+	if(j == x){
+		document.getElementById("demo").innerHTML = "Correct";c=0;
+	}
+	else if(j>x){
+		document.getElementById("demo").innerHTML = "Try Again, you guessed a bit higher";
+		
+	}
+	
+	else
+		{document.getElementById("demo").innerHTML = "Try Again, you guessed a bit lower";
+		
+	}}
+	
+}	
+</script>
+</body>
+</html>

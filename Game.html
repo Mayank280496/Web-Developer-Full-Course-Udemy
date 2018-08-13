@@ -1,0 +1,71 @@
+<html>
+<head>
+	<title>Game</title>
+	<style type="text/css">
+		#shape{
+			width:200px;
+			height:200px;
+			
+			background-color:red;
+			display:"none";
+			position:relative;
+			
+		}
+	</style>
+</head>
+<body>
+<h1>CLICK BAIT</h1>
+<h3>Dare to play if you think you are fast enough</h3>
+<p>Click No:<span id="count"></span></p>
+<p>Your time:<span id="timeTaken"></span></p>
+<button id="result">Fetch</button>
+<p id="show"></p>
+<div id="shape"></div>
+<script type="text/javascript">
+var start=0;
+var count=0;var totaltime=0;
+
+function makeShapeAppear(){
+	 var teop=Math.random() *400;
+	var left=Math.random() *800;
+	var width=(Math.random() *200)+30;
+	var letters='0123456789ABCDEF'.split('');
+	var str='#';
+	for(var i=0;i<6;i++)
+	{
+		str+=letters[Math.floor(Math.random()*16)];
+	}
+	if(Math.random()>.5)
+	{document.getElementById("shape").style.borderRadius = "50%";
+	}
+	else
+	{document.getElementById("shape").style.borderRadius = "0";
+	}
+	
+	document.getElementById("shape").style.top = teop + "px";
+	document.getElementById("shape").style.left=left + "px";
+	document.getElementById("shape").style.width=width + "px";
+	document.getElementById("shape").style.height=width + "px";
+ 	document.getElementById("shape").style.backgroundColor=str;
+ 	
+	document.getElementById("shape").style.display="block";
+	start=new Date().getTime();
+	}
+function appearAfterDelay(){
+	setTimeout(makeShapeAppear,(Math.random() * 2000)+200);
+}
+appearAfterDelay();
+document.getElementById("shape").onclick=function(){
+	document.getElementById("shape").style.display="none";
+	var end=new Date().getTime();
+	var timeTaken=(end-start)/1000;
+	document.getElementById("timeTaken").innerHTML=timeTaken+"s";
+	appearAfterDelay();count++; totaltime+=timeTaken;
+	document.getElementById("count").innerHTML=count;
+	}
+document.getElementById("result").onclick=function(){
+	document.getElementById("show").innerHTML="Average time: "+(totaltime/count) +"s";
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<html>
+<head>
+	<title>jQuery</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+	<style type="text/css">
+		
+		.circle{
+			width:200px;
+			height:200px;
+			background-color:red;margin:10px;
+			border-radius:100px;
+			}	
+		#square{
+			width:200px;
+			height:200px;
+			background-color:red;margin:10px;
+			}
+
+	</style>
+
+
+</head>
+<body>
+	<div class="text">Hii, This is Rupsa Das.You have called to JLT services. How may I help you?</div>
+	<button id="toggle">Toggle</button>
+		
+	<script type="text/javascript">
+		$("#toggle").click(function(){
+			if($(".text").css("display") =="none")
+			{ $(".text").css("display","block");}
+			else
+			{ $(".text").css("display","none");}
+		});
+		
+		
+									
+
+	</script>
+
+</body>
+</html>
